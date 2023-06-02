@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Movies from './component/Movies'
 import axios from 'axios'
-import {BrowserRouter , Routes, Route} from 'react-router-dom';
-import Summary from './component/Summary';
+
 
 
 
@@ -18,14 +17,11 @@ function App() {
 return(
 
   <>
-  <BrowserRouter>
-  <Routes>
-  <Route path='/' element={<div style={{display: "flex"}}>
+
+  <div style={{display: "flex"}}>
   <Movies myData={myData}/>
-  </div>}/> 
-  <Route path='summary' element={<Summary myData={myData}/>} />
-  </Routes>
-  </BrowserRouter>
+  </div>
+ 
    
   </>
 )
